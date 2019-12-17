@@ -70,15 +70,26 @@ func main() {
   fmt.Println("\nGetting XXBT")
   xxbt := getAssetInfo("XXBT")
   fmt.Println(xxbt)
+
+
+
   // fmt.Println("\nGetting XXBT, ZUSD")
   // getAssetInfo("XXBT", "ZUSD")
+
+
+
   fmt.Println("\nGetting []string... of XXBT, ZUSD, XETH")
   XBTUSDETH := getAssetInfo([]string{"XXBT", "ZUSD", "XETH"}...)
   fmt.Println(XBTUSDETH)
+
+
+
   // fmt.Println("\nGetting XXBT, ZUSD, XETH")
   // getAssetInfo("XXBT", "ZUSD", "XETH")
   // fmt.Println("\nGetting All Assets")
   // getAssetInfo()
+
+  postAccountBalance()
 
 }
 
